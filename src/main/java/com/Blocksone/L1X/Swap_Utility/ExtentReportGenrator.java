@@ -9,7 +9,7 @@ public class ExtentReportGenrator {
 	public static ExtentReports extent;
 	public static ExtentReports getReports() {
 		
-		String path=System.getProperty("user.dir")+"\\TestReport\\index.html";
+		String path=System.getProperty("user.dir")+"/TestReport/index.html";
 		
 		//ExtentSparkReporter --> Title,ReportName,Theme
 		ExtentSparkReporter reporter=new ExtentSparkReporter(path);

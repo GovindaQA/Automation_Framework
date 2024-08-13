@@ -76,8 +76,12 @@ public class Test04_SwapBinanceToOptimism extends Base_Class {
 		}
 
 		Library.custom_click(sp.getDestinationToken_OptimismToken(), "Select Destination Token OptimismToken");
-
-		Base_Class.sendTestData();
+		try {
+			Base_Class.sendTestData();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 

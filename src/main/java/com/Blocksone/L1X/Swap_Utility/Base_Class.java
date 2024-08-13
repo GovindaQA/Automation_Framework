@@ -3,8 +3,12 @@ package com.Blocksone.L1X.Swap_Utility;
 import java.io.FileNotFoundException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
@@ -41,6 +45,10 @@ public class Base_Class {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
+//		options.addArguments("--headless");  // Enable headless mode
+//		options.addArguments("--disable-gpu");  // Disable GPU hardware acceleration
+//		options.addArguments("--window-size=1920x1080");  // Set window size
+
 		driver = new ChromeDriver(options);
 		driver.get(config.getProductionUrl());
 		driver.manage().window().maximize();
@@ -51,34 +59,35 @@ public class Base_Class {
 	public void close_Browser()
 	{       
 		driver.quit();
+
 	}
 	/**
 	 * Common Methods
+	 * @throws InterruptedException 
 	 */
-	
-
-	public static void sendTestData()
+	public static void sendTestData() throws InterruptedException
 	{
 		hp = PageFactory.initElements(driver, HomePage_POM.class);
 		sp = PageFactory.initElements(driver, SwapPage_POM.class);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		// Input '1' into the source field and verify the resulting value in the destination field
-		wait.until(ExpectedConditions.elementToBeClickable(hp.getInput_SourceField())).sendKeys(config.sendTestData());
-		try {
-			String actualDestinationValue = config.verify_DestionationField();
-			String expectedDestinationValue = sp.getVerify_DestionationField().getText();
+		//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		Thread.sleep(2000);
+		hp.getInput_SourceField().sendKeys("enter"+Keys.ENTER);
+		hp.getInput_SourceField().sendKeys(config.sendTestData());
 
-			Assert.assertNotEquals(expectedDestinationValue, actualDestinationValue, 
+		try {
+
+			String expectedDestinationValue = sp.getVerify_DestionationField().getText();
+			String notDestinationValue = config.verify_DestionationField();
+
+			Assert.assertNotEquals(expectedDestinationValue, notDestinationValue, 
 					"Swap operation did not yield the expected result. The destination field value is incorrect.");
 
 			Library.test.log(Status.PASS, "Swap is Successful. The expected value(Is Not equals to 0$) is displayed in the destination field.");
 		} catch (AssertionError e) {
 			Library.test.log(Status.FAIL, "Swap operation failed. The expected value(Is Not equals to 0$) was not displayed in the destination field. " +
-				  e.getMessage());
+					e.getMessage());
 			throw e;
+
 		}
 	}
-
 }
-
-

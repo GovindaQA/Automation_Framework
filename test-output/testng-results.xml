@@ -1,229 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-12T15:47:15 IST" name="Suite" finished-at="2024-08-12T15:48:00 IST" duration-ms="45197">
+  <suite started-at="2024-08-14T09:24:21 IST" name="Suite" finished-at="2024-08-14T09:24:26 IST" duration-ms="5315">
     <groups>
     </groups>
-    <test started-at="2024-08-12T15:47:15 IST" name="Test" finished-at="2024-08-12T15:48:00 IST" duration-ms="45197">
+    <test started-at="2024-08-14T09:24:21 IST" name="Test" finished-at="2024-08-14T09:24:26 IST" duration-ms="5315">
       <class name="script_TESTS.Test01_SwapForDefaultChains">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@c9d0d6]" started-at="2024-08-12T15:47:15 IST" name="configureFile" finished-at="2024-08-12T15:47:15 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@3f9342d4]" started-at="2024-08-14T09:24:21 IST" name="configureFile" finished-at="2024-08-14T09:24:21 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@c9d0d6]" started-at="2024-08-12T15:47:15 IST" name="open_Browser" finished-at="2024-08-12T15:47:41 IST" duration-ms="25979" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@3f9342d4]" started-at="2024-08-14T09:24:21 IST" name="open_Browser" finished-at="2024-08-14T09:24:23 IST" duration-ms="2287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method signature="verify_Swap_SourceAndDestinationField()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@c9d0d6]" started-at="2024-08-12T15:47:41 IST" name="verify_Swap_SourceAndDestinationField" description="This test verifies that when a value is entered in the source chain, the destination chain shows the converted value." finished-at="2024-08-12T15:47:59 IST" duration-ms="17998" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Swap operation did not yield the expected result. The destination field value is incorrect. did not expect [$0] but found [$0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Swap operation did not yield the expected result. The destination field value is incorrect. did not expect [$0] but found [$0]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failEquals(Assert.java:1041)
-at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
-at org.testng.Assert.assertNotEquals(Assert.java:1531)
-at com.Blocksone.L1X.Swap_Utility.Base_Class.sendTestData(Base_Class.java:71)
-at script_TESTS.Test01_SwapForDefaultChains.verify_Swap_SourceAndDestinationField(Test01_SwapForDefaultChains.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verify_Swap_SourceAndDestinationField()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@3f9342d4]" started-at="2024-08-14T09:24:23 IST" name="verify_Swap_SourceAndDestinationField" description="This test verifies that when a value is entered in the source chain, the destination chain shows the converted value." finished-at="2024-08-14T09:24:26 IST" duration-ms="2657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Swap_SourceAndDestinationField -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@c9d0d6]" started-at="2024-08-12T15:47:59 IST" name="close_Browser" finished-at="2024-08-12T15:48:00 IST" duration-ms="823" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@3f9342d4]" started-at="2024-08-14T09:24:26 IST" name="close_Browser" finished-at="2024-08-14T09:24:26 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->
       </class> <!-- script_TESTS.Test01_SwapForDefaultChains -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite started-at="2024-08-12T15:48:21 IST" name="Suite (1)" finished-at="2024-08-12T15:48:39 IST" duration-ms="17150">
+  <suite started-at="2024-08-14T09:24:32 IST" name="Suite (1)" finished-at="2024-08-14T09:24:39 IST" duration-ms="6806">
     <groups>
     </groups>
-    <test started-at="2024-08-12T15:48:21 IST" name="Test" finished-at="2024-08-12T15:48:39 IST" duration-ms="17150">
+    <test started-at="2024-08-14T09:24:32 IST" name="Test" finished-at="2024-08-14T09:24:39 IST" duration-ms="6806">
       <class name="script_TESTS.Test03_SwapAvalancheToOptimism">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@5bf8fa12]" started-at="2024-08-12T15:48:21 IST" name="configureFile" finished-at="2024-08-12T15:48:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@63787180]" started-at="2024-08-14T09:24:32 IST" name="configureFile" finished-at="2024-08-14T09:24:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@5bf8fa12]" started-at="2024-08-12T15:48:21 IST" name="open_Browser" finished-at="2024-08-12T15:48:34 IST" duration-ms="12478" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@63787180]" started-at="2024-08-14T09:24:32 IST" name="open_Browser" finished-at="2024-08-14T09:24:34 IST" duration-ms="1680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@5bf8fa12]" started-at="2024-08-12T15:48:34 IST" name="setUp" finished-at="2024-08-12T15:48:34 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@63787180]" started-at="2024-08-14T09:24:34 IST" name="setUp" finished-at="2024-08-14T09:24:34 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwap_AvalancheToOptimism()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@5bf8fa12]" started-at="2024-08-12T15:48:34 IST" name="verifySwap_AvalancheToOptimism" finished-at="2024-08-12T15:48:37 IST" duration-ms="3583" status="PASS">
+        <test-method signature="verifySwap_AvalancheToOptimism()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@63787180]" started-at="2024-08-14T09:24:34 IST" name="verifySwap_AvalancheToOptimism" finished-at="2024-08-14T09:24:38 IST" duration-ms="4785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwap_AvalancheToOptimism -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@5bf8fa12]" started-at="2024-08-12T15:48:38 IST" name="close_Browser" finished-at="2024-08-12T15:48:39 IST" duration-ms="680" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@63787180]" started-at="2024-08-14T09:24:39 IST" name="close_Browser" finished-at="2024-08-14T09:24:39 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->
       </class> <!-- script_TESTS.Test03_SwapAvalancheToOptimism -->
     </test> <!-- Test -->
   </suite> <!-- Suite (1) -->
-  <suite started-at="2024-08-12T15:48:01 IST" name="Suite (0)" finished-at="2024-08-12T15:48:21 IST" duration-ms="20683">
+  <suite started-at="2024-08-14T09:24:27 IST" name="Suite (0)" finished-at="2024-08-14T09:24:32 IST" duration-ms="5235">
     <groups>
     </groups>
-    <test started-at="2024-08-12T15:48:01 IST" name="Test" finished-at="2024-08-12T15:48:21 IST" duration-ms="20683">
+    <test started-at="2024-08-14T09:24:27 IST" name="Test" finished-at="2024-08-14T09:24:32 IST" duration-ms="5235">
       <class name="script_TESTS.Test02_SwapPolygonToBinance">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@528c868]" started-at="2024-08-12T15:48:01 IST" name="configureFile" finished-at="2024-08-12T15:48:01 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@1f010bf0]" started-at="2024-08-14T09:24:27 IST" name="configureFile" finished-at="2024-08-14T09:24:27 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@528c868]" started-at="2024-08-12T15:48:01 IST" name="open_Browser" finished-at="2024-08-12T15:48:16 IST" duration-ms="15178" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@1f010bf0]" started-at="2024-08-14T09:24:27 IST" name="open_Browser" finished-at="2024-08-14T09:24:29 IST" duration-ms="1850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@528c868]" started-at="2024-08-12T15:48:16 IST" name="setUp" finished-at="2024-08-12T15:48:16 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@1f010bf0]" started-at="2024-08-14T09:24:29 IST" name="setUp" finished-at="2024-08-14T09:24:29 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwap_BetweenPolygonAndBinance()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@528c868]" started-at="2024-08-12T15:48:16 IST" name="verifySwap_BetweenPolygonAndBinance" finished-at="2024-08-12T15:48:20 IST" duration-ms="4312" status="PASS">
+        <test-method signature="verifySwap_BetweenPolygonAndBinance()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@1f010bf0]" started-at="2024-08-14T09:24:29 IST" name="verifySwap_BetweenPolygonAndBinance" finished-at="2024-08-14T09:24:32 IST" duration-ms="3131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwap_BetweenPolygonAndBinance -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@528c868]" started-at="2024-08-12T15:48:20 IST" name="close_Browser" finished-at="2024-08-12T15:48:21 IST" duration-ms="755" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@1f010bf0]" started-at="2024-08-14T09:24:32 IST" name="close_Browser" finished-at="2024-08-14T09:24:32 IST" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->
       </class> <!-- script_TESTS.Test02_SwapPolygonToBinance -->
     </test> <!-- Test -->
   </suite> <!-- Suite (0) -->
-  <suite started-at="2024-08-12T15:49:14 IST" name="MasterSuite" finished-at="2024-08-12T15:49:14 IST" duration-ms="0">
+  <suite started-at="2024-08-14T09:24:50 IST" name="testng" finished-at="2024-08-14T09:24:50 IST" duration-ms="0">
     <groups>
     </groups>
-  </suite> <!-- MasterSuite -->
-  <suite started-at="2024-08-12T15:48:54 IST" name="Suite (3)" finished-at="2024-08-12T15:49:14 IST" duration-ms="19202">
+  </suite> <!-- testng -->
+  <suite started-at="2024-08-14T09:24:45 IST" name="Suite (3)" finished-at="2024-08-14T09:24:50 IST" duration-ms="5114">
     <groups>
     </groups>
-    <test started-at="2024-08-12T15:48:54 IST" name="Test" finished-at="2024-08-12T15:49:14 IST" duration-ms="19202">
+    <test started-at="2024-08-14T09:24:45 IST" name="Test" finished-at="2024-08-14T09:24:50 IST" duration-ms="5114">
       <class name="script_TESTS.Test05_SwapPolygonToLayerOneX">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@4b79ac84]" started-at="2024-08-12T15:48:54 IST" name="configureFile" finished-at="2024-08-12T15:48:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@5e4bd84a]" started-at="2024-08-14T09:24:45 IST" name="configureFile" finished-at="2024-08-14T09:24:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@4b79ac84]" started-at="2024-08-12T15:48:55 IST" name="open_Browser" finished-at="2024-08-12T15:49:09 IST" duration-ms="14039" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@5e4bd84a]" started-at="2024-08-14T09:24:45 IST" name="open_Browser" finished-at="2024-08-14T09:24:46 IST" duration-ms="1700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@4b79ac84]" started-at="2024-08-12T15:49:09 IST" name="setUp" finished-at="2024-08-12T15:49:09 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@5e4bd84a]" started-at="2024-08-14T09:24:46 IST" name="setUp" finished-at="2024-08-14T09:24:46 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwap_BetweenPolygonAndLayerOneX()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@4b79ac84]" started-at="2024-08-12T15:49:09 IST" name="verifySwap_BetweenPolygonAndLayerOneX" finished-at="2024-08-12T15:49:13 IST" duration-ms="4028" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Swap operation did not yield the expected result. The destination field value is incorrect. did not expect [$0] but found [$0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Swap operation did not yield the expected result. The destination field value is incorrect. did not expect [$0] but found [$0]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failEquals(Assert.java:1041)
-at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
-at org.testng.Assert.assertNotEquals(Assert.java:1531)
-at com.Blocksone.L1X.Swap_Utility.Base_Class.sendTestData(Base_Class.java:71)
-at script_TESTS.Test05_SwapPolygonToLayerOneX.verifySwap_BetweenPolygonAndLayerOneX(Test05_SwapPolygonToLayerOneX.java:79)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifySwap_BetweenPolygonAndLayerOneX()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@5e4bd84a]" started-at="2024-08-14T09:24:46 IST" name="verifySwap_BetweenPolygonAndLayerOneX" finished-at="2024-08-14T09:24:49 IST" duration-ms="3096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwap_BetweenPolygonAndLayerOneX -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@4b79ac84]" started-at="2024-08-12T15:49:13 IST" name="close_Browser" finished-at="2024-08-12T15:49:14 IST" duration-ms="702" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@5e4bd84a]" started-at="2024-08-14T09:24:50 IST" name="close_Browser" finished-at="2024-08-14T09:24:50 IST" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->
       </class> <!-- script_TESTS.Test05_SwapPolygonToLayerOneX -->
     </test> <!-- Test -->
   </suite> <!-- Suite (3) -->
-  <suite started-at="2024-08-12T15:48:39 IST" name="Suite (2)" finished-at="2024-08-12T15:48:54 IST" duration-ms="15793">
+  <suite started-at="2024-08-14T09:24:39 IST" name="Suite (2)" finished-at="2024-08-14T09:24:45 IST" duration-ms="5754">
     <groups>
     </groups>
-    <test started-at="2024-08-12T15:48:39 IST" name="Test" finished-at="2024-08-12T15:48:54 IST" duration-ms="15793">
+    <test started-at="2024-08-14T09:24:39 IST" name="Test" finished-at="2024-08-14T09:24:45 IST" duration-ms="5754">
       <class name="script_TESTS.Test04_SwapBinanceToOptimism">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@1a20270e]" started-at="2024-08-12T15:48:39 IST" name="configureFile" finished-at="2024-08-12T15:48:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@34f22f9d]" started-at="2024-08-14T09:24:39 IST" name="configureFile" finished-at="2024-08-14T09:24:39 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@1a20270e]" started-at="2024-08-12T15:48:39 IST" name="open_Browser" finished-at="2024-08-12T15:48:49 IST" duration-ms="10064" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@34f22f9d]" started-at="2024-08-14T09:24:39 IST" name="open_Browser" finished-at="2024-08-14T09:24:41 IST" duration-ms="2347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@1a20270e]" started-at="2024-08-12T15:48:49 IST" name="setUp" finished-at="2024-08-12T15:48:49 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@34f22f9d]" started-at="2024-08-14T09:24:41 IST" name="setUp" finished-at="2024-08-14T09:24:41 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwap_BinanceToOptimism()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@1a20270e]" started-at="2024-08-12T15:48:49 IST" name="verifySwap_BinanceToOptimism" finished-at="2024-08-12T15:48:53 IST" duration-ms="4646" status="PASS">
+        <test-method signature="verifySwap_BinanceToOptimism()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@34f22f9d]" started-at="2024-08-14T09:24:41 IST" name="verifySwap_BinanceToOptimism" finished-at="2024-08-14T09:24:44 IST" duration-ms="3111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwap_BinanceToOptimism -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@1a20270e]" started-at="2024-08-12T15:48:54 IST" name="close_Browser" finished-at="2024-08-12T15:48:54 IST" duration-ms="723" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@34f22f9d]" started-at="2024-08-14T09:24:44 IST" name="close_Browser" finished-at="2024-08-14T09:24:45 IST" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->

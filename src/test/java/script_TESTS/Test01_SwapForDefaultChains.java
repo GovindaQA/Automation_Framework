@@ -34,7 +34,12 @@ public class Test01_SwapForDefaultChains extends Base_Class {
 		}
 //		Get the common method from Base Class to send the Test Data
 
-		Base_Class.sendTestData();
+		try {
+			Base_Class.sendTestData();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 

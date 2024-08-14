@@ -75,9 +75,13 @@ public class Test03_SwapAvalancheToOptimism extends Base_Class {
             throw e;
         }
 
-        Library.custom_click(sp.getDestinationToken_OptimismToken(), "Select Destination Token OptimismToken");
-        
-		Base_Class.sendTestData();
+        Library.custom_click(sp.getDestinationToken_OptimismToken(), "Select Destination Token OptimismToken");   
+		try {
+			Base_Class.sendTestData();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
     
     }

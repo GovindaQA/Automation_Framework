@@ -70,7 +70,7 @@ public class Base_Class {
 		hp = PageFactory.initElements(driver, HomePage_POM.class);
 		sp = PageFactory.initElements(driver, SwapPage_POM.class);
 		//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		hp.getInput_SourceField().sendKeys("enter"+Keys.ENTER);
 		hp.getInput_SourceField().sendKeys(config.sendTestData());
 

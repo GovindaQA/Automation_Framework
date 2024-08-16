@@ -20,8 +20,8 @@ public class ExtentReportGenrator {
 		extent=new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Module Name", "Swap");
-		extent.setSystemInfo("QA Team", "Abhijeet Bhosale(Manager), Gaurav Dhole(QA), Govinda Chavhan(QA)");
-		extent.setSystemInfo("O.S.", "Windows10");
+		extent.setSystemInfo("QA Team", "Mr. Abhijeet Bhosale(Manager), Mr. Gaurav Dhole(QA), Mr. Govinda Chavhan(QA)");
+		extent.setSystemInfo("O.S.", "Windows10, Linux");
 		return extent;
 	}
 

@@ -4,6 +4,9 @@
 <listeners>
 <listener class-name="com.Blocksone.L1X.Swap_Utility.Listeners"></listener>
 </listeners>
+<listeners>
+<listener class-name="com.Blocksone.L1X.Swap_Utility.RetryTransformer"></listener>
+</listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="script_TESTS.Test02_SwapPolygonToBinance"/>

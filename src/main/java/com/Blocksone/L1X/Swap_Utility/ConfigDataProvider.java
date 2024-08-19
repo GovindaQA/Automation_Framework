@@ -78,6 +78,13 @@ public class ConfigDataProvider {
 		return pro.getProperty("sendTestData");
 	}
 	
+	public String verify_SwapUpdateWindow()
+	{
+		return pro.getProperty("verify_SwapUpdateWindow");
+	}
+	
+	
+	
 	
 }	
 	

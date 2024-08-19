@@ -20,9 +20,16 @@ public class Test01_SwapForDefaultChains extends Base_Class {
 	{
 		HomePage_POM hp = PageFactory.initElements(driver, HomePage_POM.class);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		
 
 		// Click on the Swap button and verify the swap page
 		Library.custom_click(hp.getBtn_Swap(), "Click on Swap Button");
+		try {
+			Base_Class.stopSwapIfUpdateWindowAppears();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		try {
 		    String transactionText = hp.getVerify_SwapPage().getText();

@@ -90,4 +90,17 @@ public class Base_Class {
 
 		}
 	}
+	public static void stopSwapIfUpdateWindowAppears()
+	{
+		if(sp.getSwapUpdateWindow().isDisplayed()||sp.getSwapUpdateWindow().getText().equalsIgnoreCase(config.verify_SwapUpdateWindow()))
+		{
+			System.out.println("Hold on swap functionality. Swap is being updated");
+			driver.quit();
+		}
+		else
+		{
+			System.out.println("No such window for swap updation: Go for Swap");
+		}
+		
+	}
 }

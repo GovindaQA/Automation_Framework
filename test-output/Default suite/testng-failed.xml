@@ -3,12 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="script_TESTS.Test01_SwapForDefaultChains">
+        <methods>
+          <include name="verify_Swap_SourceAndDestinationField"/>
+          <include name="configureFile"/>
+          <include name="close_Browser"/>
+          <include name="open_Browser"/>
+        </methods>
+      </class> <!-- script_TESTS.Test01_SwapForDefaultChains -->
       <class name="script_TESTS.Test05_SwapPolygonToLayerOneX">
         <methods>
           <include name="verifySwap_BetweenPolygonAndLayerOneX"/>
           <include name="setUp"/>
-          <include name="configureFile"/>
           <include name="close_Browser"/>
+          <include name="configureFile"/>
           <include name="open_Browser"/>
         </methods>
       </class> <!-- script_TESTS.Test05_SwapPolygonToLayerOneX -->
@@ -21,23 +29,6 @@
           <include name="open_Browser"/>
         </methods>
       </class> <!-- script_TESTS.Test02_SwapPolygonToBinance -->
-      <class name="script_TESTS.Test03_SwapAvalancheToOptimism">
-        <methods>
-          <include name="setUp"/>
-          <include name="verifySwap_AvalancheToOptimism"/>
-          <include name="configureFile"/>
-          <include name="close_Browser"/>
-          <include name="open_Browser"/>
-        </methods>
-      </class> <!-- script_TESTS.Test03_SwapAvalancheToOptimism -->
-      <class name="script_TESTS.Test01_SwapForDefaultChains">
-        <methods>
-          <include name="verify_Swap_SourceAndDestinationField"/>
-          <include name="configureFile"/>
-          <include name="close_Browser"/>
-          <include name="open_Browser"/>
-        </methods>
-      </class> <!-- script_TESTS.Test01_SwapForDefaultChains -->
       <class name="script_TESTS.Test04_SwapBinanceToOptimism">
         <methods>
           <include name="verifySwap_BinanceToOptimism"/>
@@ -47,6 +38,15 @@
           <include name="open_Browser"/>
         </methods>
       </class> <!-- script_TESTS.Test04_SwapBinanceToOptimism -->
+      <class name="script_TESTS.Test03_SwapAvalancheToOptimism">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifySwap_AvalancheToOptimism"/>
+          <include name="configureFile"/>
+          <include name="close_Browser"/>
+          <include name="open_Browser"/>
+        </methods>
+      </class> <!-- script_TESTS.Test03_SwapAvalancheToOptimism -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -83,6 +83,10 @@ public class ConfigDataProvider {
 		return pro.getProperty("verify_SwapUpdateWindow");
 	}
 	
+	public String stopVerifyingSwap()
+	{
+		return pro.getProperty("stopVerifyingSwap");
+	}
 	
 	
 	

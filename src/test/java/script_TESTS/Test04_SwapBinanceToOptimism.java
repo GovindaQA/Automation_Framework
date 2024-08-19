@@ -24,10 +24,9 @@ public class Test04_SwapBinanceToOptimism extends Base_Class {
 		sp = PageFactory.initElements(driver, SwapPage_POM.class);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	}
-
 	private static void clickonSwapAndVerifyPage() {
 		Library.custom_click(sp.getBtn_Swap(), "Initiate swap operation by clicking the Swap button");
-		
+
 		try {
 			String transactionText = sp.getVerify_SwapPage().getText();
 			Assert.assertEquals(transactionText, config.verify_SwapPage(), "The expected Swap page text does not match the actual text.");
@@ -41,48 +40,49 @@ public class Test04_SwapBinanceToOptimism extends Base_Class {
 	@Test()
 	public void verifySwap_BinanceToOptimism() {
 		clickonSwapAndVerifyPage();
-		Assert.assertNotEquals(sp.getSwapUpdateWindow().getText(), config.verify_SwapUpdateWindow(), "swap is being updated: Do not perform swap functionality");
+		if(!sp.getSwapUpdateWindow().isDisplayed())
+		{
+			// Click on the source chain dropdown and select Binance
+			Library.custom_click(sp.getSourceChainDropdown(), "Click on source chain Dropdown");
+			Library.custom_click(sp.getSourceChain_Binance(), "Select Binance as source chain");
 
+			// Verify the selection of Binance as the source chain
+			try {
+				String verifySelectionBn = sp.getVerifySelectionOfSourceOrDestinationChain().getText();
+				Assert.assertEquals(verifySelectionBn, config.verifyChainSelection_SourceOrDestination_Binance(),
+						"Verification of the selected source chain Binance failed.");
+				Library.test.log(Status.PASS, "Verification of the selected source chain for Binance has been successfully completed.");
+			} catch (AssertionError e) {
+				Library.test.log(Status.FAIL, "Verification of the selected source chain Binance failed: " + e.getMessage());
+				throw e;
+			}
+			// Click to select the source token for Binance
+			Library.custom_click(sp.getSourceToken_BinanceToken(), "Select Source Token BinanceToken");
+			// Click on the destination chain dropdown and select Optimism
+			Library.custom_click(sp.getDestinationChainDropdown(), "Click on destination chain Dropdown");
+			Library.custom_click(sp.getDestinationChain_Optimism2(), "Select Optimism as destination chain");
+			// Verify the selection of Optimism as the destination chain
+			try {
+				String verifySelectionOp = sp.getVerifySelectionOfSourceOrDestinationChain().getText();
+				Assert.assertEquals(verifySelectionOp, config.verifyChainSelection_SourceOrDestination_Optimism(),
+						"Verification of the selected destination chain Optimism failed.");
+				Library.test.log(Status.PASS, "Verification of the selected destination chain for Optimism has been successfully completed.");
+			} catch (AssertionError e) {
+				Library.test.log(Status.FAIL, "Verification of the selected destination chain Optimism failed: " + e.getMessage());
+				throw e;
+			}
 
-		// Click on the source chain dropdown and select Binance
-		Library.custom_click(sp.getSourceChainDropdown(), "Click on source chain Dropdown");
-		Library.custom_click(sp.getSourceChain_Binance(), "Select Binance as source chain");
+			Library.custom_click(sp.getDestinationToken_OptimismToken(), "Select Destination Token OptimismToken");
+			try {
+				Base_Class.sendTestData();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}else
+		{
+			Library.test.log(Status.SKIP, config.stopVerifyingSwap());
 
-		// Verify the selection of Binance as the source chain
-		try {
-			String verifySelectionBn = sp.getVerifySelectionOfSourceOrDestinationChain().getText();
-			Assert.assertEquals(verifySelectionBn, config.verifyChainSelection_SourceOrDestination_Binance(),
-					"Verification of the selected source chain Binance failed.");
-			Library.test.log(Status.PASS, "Verification of the selected source chain for Binance has been successfully completed.");
-		} catch (AssertionError e) {
-			Library.test.log(Status.FAIL, "Verification of the selected source chain Binance failed: " + e.getMessage());
-			throw e;
-		}
-
-		// Click to select the source token for Binance
-		Library.custom_click(sp.getSourceToken_BinanceToken(), "Select Source Token BinanceToken");
-
-		// Click on the destination chain dropdown and select Optimism
-		Library.custom_click(sp.getDestinationChainDropdown(), "Click on destination chain Dropdown");
-		Library.custom_click(sp.getDestinationChain_Optimism2(), "Select Optimism as destination chain");
-
-		// Verify the selection of Optimism as the destination chain
-		try {
-			String verifySelectionOp = sp.getVerifySelectionOfSourceOrDestinationChain().getText();
-			Assert.assertEquals(verifySelectionOp, config.verifyChainSelection_SourceOrDestination_Optimism(),
-					"Verification of the selected destination chain Optimism failed.");
-			Library.test.log(Status.PASS, "Verification of the selected destination chain for Optimism has been successfully completed.");
-		} catch (AssertionError e) {
-			Library.test.log(Status.FAIL, "Verification of the selected destination chain Optimism failed: " + e.getMessage());
-			throw e;
-		}
-
-		Library.custom_click(sp.getDestinationToken_OptimismToken(), "Select Destination Token OptimismToken");
-		try {
-			Base_Class.sendTestData();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 
 	}

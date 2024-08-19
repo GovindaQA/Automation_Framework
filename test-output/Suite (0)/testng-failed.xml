@@ -11,8 +11,8 @@
         <methods>
           <include name="setUp"/>
           <include name="verifySwap_BetweenPolygonAndBinance"/>
-          <include name="configureFile"/>
           <include name="close_Browser"/>
+          <include name="configureFile"/>
           <include name="open_Browser"/>
         </methods>
       </class> <!-- script_TESTS.Test02_SwapPolygonToBinance -->

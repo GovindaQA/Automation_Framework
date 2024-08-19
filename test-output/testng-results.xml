@@ -2,140 +2,140 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-16T11:46:29 IST" name="Suite" finished-at="2024-08-16T11:46:35 IST" duration-ms="6004">
+  <suite started-at="2024-08-19T11:52:19 IST" name="Suite" finished-at="2024-08-19T11:52:22 IST" duration-ms="3371">
     <groups>
     </groups>
-    <test started-at="2024-08-16T11:46:29 IST" name="Test" finished-at="2024-08-16T11:46:35 IST" duration-ms="6004">
+    <test started-at="2024-08-19T11:52:19 IST" name="Test" finished-at="2024-08-19T11:52:22 IST" duration-ms="3371">
       <class name="script_TESTS.Test01_SwapForDefaultChains">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@740fb309]" started-at="2024-08-16T11:46:29 IST" name="configureFile" finished-at="2024-08-16T11:46:29 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@34129c78]" started-at="2024-08-19T11:52:19 IST" name="configureFile" finished-at="2024-08-19T11:52:19 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@740fb309]" started-at="2024-08-16T11:46:29 IST" name="open_Browser" finished-at="2024-08-16T11:46:32 IST" duration-ms="2746" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@34129c78]" started-at="2024-08-19T11:52:19 IST" name="open_Browser" finished-at="2024-08-19T11:52:21 IST" duration-ms="2461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method signature="verify_Swap_SourceAndDestinationField()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@740fb309]" started-at="2024-08-16T11:46:32 IST" name="verify_Swap_SourceAndDestinationField" description="This test verifies that when a value is entered in the source chain, the destination chain shows the converted value." finished-at="2024-08-16T11:46:35 IST" duration-ms="2857" status="PASS">
+        <test-method signature="verify_Swap_SourceAndDestinationField()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@34129c78]" started-at="2024-08-19T11:52:21 IST" name="verify_Swap_SourceAndDestinationField" description="This test verifies that when a value is entered in the source chain, the destination chain shows the converted value." finished-at="2024-08-19T11:52:22 IST" duration-ms="589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Swap_SourceAndDestinationField -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@740fb309]" started-at="2024-08-16T11:46:35 IST" name="close_Browser" finished-at="2024-08-16T11:46:35 IST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test01_SwapForDefaultChains@34129c78]" started-at="2024-08-19T11:52:22 IST" name="close_Browser" finished-at="2024-08-19T11:52:22 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->
       </class> <!-- script_TESTS.Test01_SwapForDefaultChains -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite started-at="2024-08-16T11:46:42 IST" name="Suite (1)" finished-at="2024-08-16T11:46:48 IST" duration-ms="5964">
+  <suite started-at="2024-08-19T11:52:25 IST" name="Suite (1)" finished-at="2024-08-19T11:52:28 IST" duration-ms="2726">
     <groups>
     </groups>
-    <test started-at="2024-08-16T11:46:42 IST" name="Test" finished-at="2024-08-16T11:46:48 IST" duration-ms="5964">
+    <test started-at="2024-08-19T11:52:25 IST" name="Test" finished-at="2024-08-19T11:52:28 IST" duration-ms="2726">
       <class name="script_TESTS.Test03_SwapAvalancheToOptimism">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@7eecb5b8]" started-at="2024-08-16T11:46:42 IST" name="configureFile" finished-at="2024-08-16T11:46:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@239105a8]" started-at="2024-08-19T11:52:25 IST" name="configureFile" finished-at="2024-08-19T11:52:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@7eecb5b8]" started-at="2024-08-16T11:46:42 IST" name="open_Browser" finished-at="2024-08-16T11:46:44 IST" duration-ms="2009" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@239105a8]" started-at="2024-08-19T11:52:25 IST" name="open_Browser" finished-at="2024-08-19T11:52:27 IST" duration-ms="1818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@7eecb5b8]" started-at="2024-08-16T11:46:44 IST" name="setUp" finished-at="2024-08-16T11:46:44 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@239105a8]" started-at="2024-08-19T11:52:27 IST" name="setUp" finished-at="2024-08-19T11:52:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwap_AvalancheToOptimism()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@7eecb5b8]" started-at="2024-08-16T11:46:44 IST" name="verifySwap_AvalancheToOptimism" finished-at="2024-08-16T11:46:47 IST" duration-ms="3580" status="PASS">
+        <test-method signature="verifySwap_AvalancheToOptimism()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@239105a8]" started-at="2024-08-19T11:52:27 IST" name="verifySwap_AvalancheToOptimism" finished-at="2024-08-19T11:52:27 IST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwap_AvalancheToOptimism -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@7eecb5b8]" started-at="2024-08-16T11:46:48 IST" name="close_Browser" finished-at="2024-08-16T11:46:48 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test03_SwapAvalancheToOptimism@239105a8]" started-at="2024-08-19T11:52:27 IST" name="close_Browser" finished-at="2024-08-19T11:52:28 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->
       </class> <!-- script_TESTS.Test03_SwapAvalancheToOptimism -->
     </test> <!-- Test -->
   </suite> <!-- Suite (1) -->
-  <suite started-at="2024-08-16T11:46:36 IST" name="Suite (0)" finished-at="2024-08-16T11:46:42 IST" duration-ms="6005">
+  <suite started-at="2024-08-19T11:52:22 IST" name="Suite (0)" finished-at="2024-08-19T11:52:25 IST" duration-ms="2662">
     <groups>
     </groups>
-    <test started-at="2024-08-16T11:46:36 IST" name="Test" finished-at="2024-08-16T11:46:42 IST" duration-ms="6005">
+    <test started-at="2024-08-19T11:52:22 IST" name="Test" finished-at="2024-08-19T11:52:25 IST" duration-ms="2662">
       <class name="script_TESTS.Test02_SwapPolygonToBinance">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@210ab13f]" started-at="2024-08-16T11:46:36 IST" name="configureFile" finished-at="2024-08-16T11:46:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@791d1f8b]" started-at="2024-08-19T11:52:22 IST" name="configureFile" finished-at="2024-08-19T11:52:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@210ab13f]" started-at="2024-08-16T11:46:36 IST" name="open_Browser" finished-at="2024-08-16T11:46:38 IST" duration-ms="1952" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@791d1f8b]" started-at="2024-08-19T11:52:22 IST" name="open_Browser" finished-at="2024-08-19T11:52:24 IST" duration-ms="1815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@210ab13f]" started-at="2024-08-16T11:46:38 IST" name="setUp" finished-at="2024-08-16T11:46:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@791d1f8b]" started-at="2024-08-19T11:52:24 IST" name="setUp" finished-at="2024-08-19T11:52:24 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwap_BetweenPolygonAndBinance()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@210ab13f]" started-at="2024-08-16T11:46:38 IST" name="verifySwap_BetweenPolygonAndBinance" finished-at="2024-08-16T11:46:41 IST" duration-ms="3674" status="PASS">
+        <test-method signature="verifySwap_BetweenPolygonAndBinance()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@791d1f8b]" started-at="2024-08-19T11:52:24 IST" name="verifySwap_BetweenPolygonAndBinance" finished-at="2024-08-19T11:52:25 IST" duration-ms="539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwap_BetweenPolygonAndBinance -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@210ab13f]" started-at="2024-08-16T11:46:42 IST" name="close_Browser" finished-at="2024-08-16T11:46:42 IST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test02_SwapPolygonToBinance@791d1f8b]" started-at="2024-08-19T11:52:25 IST" name="close_Browser" finished-at="2024-08-19T11:52:25 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->
       </class> <!-- script_TESTS.Test02_SwapPolygonToBinance -->
     </test> <!-- Test -->
   </suite> <!-- Suite (0) -->
-  <suite started-at="2024-08-16T11:46:59 IST" name="testng" finished-at="2024-08-16T11:46:59 IST" duration-ms="0">
+  <suite started-at="2024-08-19T11:52:33 IST" name="testng" finished-at="2024-08-19T11:52:33 IST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- testng -->
-  <suite started-at="2024-08-16T11:46:53 IST" name="Suite (3)" finished-at="2024-08-16T11:46:59 IST" duration-ms="5798">
+  <suite started-at="2024-08-19T11:52:30 IST" name="Suite (3)" finished-at="2024-08-19T11:52:33 IST" duration-ms="2776">
     <groups>
     </groups>
-    <test started-at="2024-08-16T11:46:53 IST" name="Test" finished-at="2024-08-16T11:46:59 IST" duration-ms="5798">
+    <test started-at="2024-08-19T11:52:30 IST" name="Test" finished-at="2024-08-19T11:52:33 IST" duration-ms="2776">
       <class name="script_TESTS.Test05_SwapPolygonToLayerOneX">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@2584b82d]" started-at="2024-08-16T11:46:53 IST" name="configureFile" finished-at="2024-08-16T11:46:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@407a7f2a]" started-at="2024-08-19T11:52:30 IST" name="configureFile" finished-at="2024-08-19T11:52:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@2584b82d]" started-at="2024-08-16T11:46:53 IST" name="open_Browser" finished-at="2024-08-16T11:46:55 IST" duration-ms="1963" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@407a7f2a]" started-at="2024-08-19T11:52:30 IST" name="open_Browser" finished-at="2024-08-19T11:52:32 IST" duration-ms="1858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@2584b82d]" started-at="2024-08-16T11:46:55 IST" name="setUp" finished-at="2024-08-16T11:46:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@407a7f2a]" started-at="2024-08-19T11:52:32 IST" name="setUp" finished-at="2024-08-19T11:52:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwap_BetweenPolygonAndLayerOneX()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@2584b82d]" started-at="2024-08-16T11:46:55 IST" name="verifySwap_BetweenPolygonAndLayerOneX" finished-at="2024-08-16T11:46:59 IST" duration-ms="3504" status="PASS">
+        <test-method signature="verifySwap_BetweenPolygonAndLayerOneX()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@407a7f2a]" started-at="2024-08-19T11:52:32 IST" name="verifySwap_BetweenPolygonAndLayerOneX" finished-at="2024-08-19T11:52:33 IST" duration-ms="571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwap_BetweenPolygonAndLayerOneX -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@2584b82d]" started-at="2024-08-16T11:46:59 IST" name="close_Browser" finished-at="2024-08-16T11:46:59 IST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test05_SwapPolygonToLayerOneX@407a7f2a]" started-at="2024-08-19T11:52:33 IST" name="close_Browser" finished-at="2024-08-19T11:52:33 IST" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->
       </class> <!-- script_TESTS.Test05_SwapPolygonToLayerOneX -->
     </test> <!-- Test -->
   </suite> <!-- Suite (3) -->
-  <suite started-at="2024-08-16T11:46:48 IST" name="Suite (2)" finished-at="2024-08-16T11:46:53 IST" duration-ms="5732">
+  <suite started-at="2024-08-19T11:52:28 IST" name="Suite (2)" finished-at="2024-08-19T11:52:30 IST" duration-ms="2854">
     <groups>
     </groups>
-    <test started-at="2024-08-16T11:46:48 IST" name="Test" finished-at="2024-08-16T11:46:53 IST" duration-ms="5732">
+    <test started-at="2024-08-19T11:52:28 IST" name="Test" finished-at="2024-08-19T11:52:30 IST" duration-ms="2854">
       <class name="script_TESTS.Test04_SwapBinanceToOptimism">
-        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@71687585]" started-at="2024-08-16T11:46:48 IST" name="configureFile" finished-at="2024-08-16T11:46:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configureFile()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@23202fce]" started-at="2024-08-19T11:52:28 IST" name="configureFile" finished-at="2024-08-19T11:52:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureFile -->
-        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@71687585]" started-at="2024-08-16T11:46:48 IST" name="open_Browser" finished-at="2024-08-16T11:46:50 IST" duration-ms="1892" status="PASS">
+        <test-method is-config="true" signature="open_Browser()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@23202fce]" started-at="2024-08-19T11:52:28 IST" name="open_Browser" finished-at="2024-08-19T11:52:30 IST" duration-ms="1949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Browser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@71687585]" started-at="2024-08-16T11:46:50 IST" name="setUp" finished-at="2024-08-16T11:46:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@23202fce]" started-at="2024-08-19T11:52:30 IST" name="setUp" finished-at="2024-08-19T11:52:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwap_BinanceToOptimism()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@71687585]" started-at="2024-08-16T11:46:50 IST" name="verifySwap_BinanceToOptimism" finished-at="2024-08-16T11:46:53 IST" duration-ms="3473" status="PASS">
+        <test-method signature="verifySwap_BinanceToOptimism()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@23202fce]" started-at="2024-08-19T11:52:30 IST" name="verifySwap_BinanceToOptimism" finished-at="2024-08-19T11:52:30 IST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwap_BinanceToOptimism -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@71687585]" started-at="2024-08-16T11:46:53 IST" name="close_Browser" finished-at="2024-08-16T11:46:53 IST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:script_TESTS.Test04_SwapBinanceToOptimism@23202fce]" started-at="2024-08-19T11:52:30 IST" name="close_Browser" finished-at="2024-08-19T11:52:30 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Browser -->

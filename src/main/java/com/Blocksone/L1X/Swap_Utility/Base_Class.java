@@ -90,4 +90,24 @@ public class Base_Class {
 
 		}
 	}
-}
+	public static void stopSwapIfUpdateWindowAppears()
+	{
+		if(sp.getSwapUpdateWindow().isDisplayed())
+		{
+		    String swapUpdateWindowText = sp.getSwapUpdateWindow().getText();
+		    Assert.assertEquals(swapUpdateWindowText, config.verify_SwapUpdateWindow(),
+		            "Swap is being updated: Do not perform swap functionality.");
+		    Library.test.log(Status.SKIP, "close the driver");
+		    driver.close();
+		}
+		    else
+		    {
+			    Library.test.log(Status.INFO, "No update winodw please go for swap");
+
+		    }
+		
+		  
+		}
+
+		
+	}

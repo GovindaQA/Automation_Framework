@@ -78,6 +78,11 @@ public class SwapPage_POM {
 	@FindBy(xpath="//p[normalize-space()='L1X']")
 	private WebElement destinationToken_L1X3;
 	
+
+	@FindBy(xpath="//h4[text()='Assist Desk']/parent::div/following-sibling::div/ul/li")
+	private WebElement swapUpdateWindow;
+	
+	
 	
 	
 	
@@ -260,6 +265,14 @@ public class SwapPage_POM {
 
 	public void setSourceToken_BinanceToken(WebElement sourceToken_BinanceToken) {
 		SourceToken_BinanceToken = sourceToken_BinanceToken;
+	}
+
+	public WebElement getSwapUpdateWindow() {
+		return swapUpdateWindow;
+	}
+
+	public void setSwapUpdateWindow(WebElement swapUpdateWindow) {
+		this.swapUpdateWindow = swapUpdateWindow;
 	}
 	
 	

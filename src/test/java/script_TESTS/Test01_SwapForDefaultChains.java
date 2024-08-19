@@ -24,12 +24,6 @@ public class Test01_SwapForDefaultChains extends Base_Class {
 
 		// Click on the Swap button and verify the swap page
 		Library.custom_click(hp.getBtn_Swap(), "Click on Swap Button");
-		try {
-			Base_Class.stopSwapIfUpdateWindowAppears();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 
 		try {
 		    String transactionText = hp.getVerify_SwapPage().getText();
@@ -40,6 +34,8 @@ public class Test01_SwapForDefaultChains extends Base_Class {
 		    throw e;
 		}
 //		Get the common method from Base Class to send the Test Data
+		Assert.assertNotEquals(sp.getSwapUpdateWindow().getText(), config.verify_SwapUpdateWindow(), "swap is being updated: Do not perform swap functionality");
+
 
 		try {
 			Base_Class.sendTestData();

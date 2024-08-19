@@ -27,12 +27,7 @@ public class Test04_SwapBinanceToOptimism extends Base_Class {
 
 	private static void clickonSwapAndVerifyPage() {
 		Library.custom_click(sp.getBtn_Swap(), "Initiate swap operation by clicking the Swap button");
-		try {
-			Base_Class.stopSwapIfUpdateWindowAppears();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		try {
 			String transactionText = sp.getVerify_SwapPage().getText();
 			Assert.assertEquals(transactionText, config.verify_SwapPage(), "The expected Swap page text does not match the actual text.");
@@ -46,6 +41,8 @@ public class Test04_SwapBinanceToOptimism extends Base_Class {
 	@Test()
 	public void verifySwap_BinanceToOptimism() {
 		clickonSwapAndVerifyPage();
+		Assert.assertNotEquals(sp.getSwapUpdateWindow().getText(), config.verify_SwapUpdateWindow(), "swap is being updated: Do not perform swap functionality");
+
 
 		// Click on the source chain dropdown and select Binance
 		Library.custom_click(sp.getSourceChainDropdown(), "Click on source chain Dropdown");

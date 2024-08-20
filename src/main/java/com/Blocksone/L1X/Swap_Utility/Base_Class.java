@@ -45,9 +45,10 @@ public class Base_Class {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
-//		options.addArguments("--headless");  // Enable headless mode
-//		options.addArguments("--disable-gpu");  // Disable GPU hardware acceleration
-//		options.addArguments("--window-size=1920x1080");  // Set window size
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--headless");
+
 
 		driver = new ChromeDriver(options);
 		driver.get(config.getProductionUrl());

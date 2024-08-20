@@ -8,7 +8,7 @@ public class HomePage_POM {
 	@FindBy(xpath="(//p[text()='Swap'])[1]")
 	private WebElement btn_Swap;
 	
-	@FindBy(xpath="//p[text()='Transaction Details']")
+	@FindBy(xpath="//div[@class='accordian-action d-flex align-items-center justify-content-between mb-2']")
 	private WebElement verify_SwapPage;
 	
 	@FindBy(xpath="(//div[@class='d-flex align-items-center value-input']//descendant::input)[1]")
